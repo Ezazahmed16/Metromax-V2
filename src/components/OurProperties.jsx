@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { FaMapLocationDot } from "react-icons/fa6";
 
 const OurProperties = () => {
@@ -11,14 +12,16 @@ const OurProperties = () => {
                         <Image src="/projects/p2.jpg" alt="Shoes" height={300} width={400} className='rounded-xl' loading="lazy" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">Metromax south Breeze</h2>
+                        <h2 className="card-title">South Breeze By Metromax</h2>
                         <div className='flex gap-3 justify-center items-center'>
                             <FaMapLocationDot className='h-12 w-12' />
                             <p>House-63/64,Road no-04,Block-Ta,Section-06
                                 Rupnagar,Mirpur,Dhaka-1216</p>
                         </div>
                         <div className="card-actions justify-start">
-                            <button className="btn btn-accent">See More</button>
+                            <Link href='/properties/SouthMetromax'>
+                                <button className="btn btn-accent btn-outline">See More</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -28,7 +31,7 @@ const OurProperties = () => {
                         <Image src="/projects/p2-2.jpg" alt="Shoes" height={300} width={400} loading="lazy" className='rounded-xl' />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">Metromax Arefin&rsquo;s Elysium </h2>
+                        <h2 className="card-title">Arefin&rsquo;s Elysium By Metromax </h2>
                         <div className='flex gap-3 justify-center items-center'>
                             <FaMapLocationDot className='h-12 w-12' />
                             <p>House no-49/50,Block-C,
@@ -36,7 +39,9 @@ const OurProperties = () => {
                                 Mirpur,Dhaka-1216</p>
                         </div>
                         <div className="card-actions justify-start">
-                            <button className="btn btn-accent">See More</button>
+                            <Link href='/properties/ArefinMetromax'>
+                                <button className="btn btn-accent btn-outline">See More</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
