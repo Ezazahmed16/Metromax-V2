@@ -7,8 +7,8 @@ const page = () => {
             <div className="hero h-96 image-full" style={{ backgroundImage: 'url(https://cdn.pixabay.com/photo/2020/03/21/20/03/real-estate-4955087_640.jpg)' }}>
                 <div className="hero-overlay bg-opacity-70"></div>
                 <div className="hero-content w-full text-white">
-                    <div className="max-w-7xl">
-                        <h1 className="mb-5 text-5xl font-bold">Media Center</h1>
+                    <div className="w-full mt-64">
+                        <h1 className="mb-5 text-5xl">Media Center</h1>
                     </div>
                 </div>
             </div>

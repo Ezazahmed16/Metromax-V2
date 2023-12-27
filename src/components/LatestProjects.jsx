@@ -2,6 +2,7 @@ import React from 'react'
 import AnimationWrapper from './AnimationWrapper'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const LatestProjects = () => {
     return (
@@ -32,9 +33,11 @@ const LatestProjects = () => {
                                                 <h1 className='pb-6'>
                                                     Metromax south Breeze
                                                 </h1>
-                                                <button className='btn btn-accent btn-outline mb-3'>
-                                                    More Info <FaArrowRightLong />
-                                                </button>
+                                                <Link href='/properties/SouthMetromax'>
+                                                    <button className='btn btn-accent btn-outline mb-3'>
+                                                        More Info <FaArrowRightLong />
+                                                    </button>
+                                                </Link>
                                             </div>
                                         </div>
 
@@ -50,9 +53,11 @@ const LatestProjects = () => {
                                                 <h1 className='pb-6'>
                                                     Metromax Arefin&rsquo;s Elysium
                                                 </h1>
-                                                <button className='btn btn-accent btn-outline mb-3'>
-                                                    More Info <FaArrowRightLong />
-                                                </button>
+                                                <Link href='/properties/ArefinMetromax'>
+                                                    <button className='btn btn-accent btn-outline mb-3'>
+                                                        More Info <FaArrowRightLong />
+                                                    </button>
+                                                </Link>
                                             </div>
                                         </div>
 

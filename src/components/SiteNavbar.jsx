@@ -24,7 +24,7 @@ const SiteNavbar = () => {
             } else {
                 setColor('transparent');
                 setTextColor('#ffffff');
-                setLogoSrc('/projects/logo-color.png'); // Change to your default logo
+                setLogoSrc('/GIL/logo.png'); // Change to your default logo
             }
         };
         window.addEventListener('scroll', changeColor);
