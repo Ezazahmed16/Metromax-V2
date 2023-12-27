@@ -9,7 +9,7 @@ const SiteNavbar = () => {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState('transparent');
     const [textColor, setTextColor] = useState('white');
-    const [logoSrc, setLogoSrc] = useState('/logo.png');
+    const [logoSrc, setLogoSrc] = useState('/projects/logo-color.png');
 
     const handleNav = () => {
         setNav(!nav);
@@ -24,7 +24,7 @@ const SiteNavbar = () => {
             } else {
                 setColor('transparent');
                 setTextColor('#ffffff');
-                setLogoSrc('/logo.png'); // Change to your default logo
+                setLogoSrc('/projects/logo-color.png'); // Change to your default logo
             }
         };
         window.addEventListener('scroll', changeColor);
