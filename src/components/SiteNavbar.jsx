@@ -9,6 +9,7 @@ const SiteNavbar = () => {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState('transparent');
     const [textColor, setTextColor] = useState('white');
+    const [logoSrc, setLogoSrc] = useState('/logo.png');
 
     const handleNav = () => {
         setNav(!nav);
@@ -19,12 +20,19 @@ const SiteNavbar = () => {
             if (window.scrollY >= 90) {
                 setColor('#ffffff');
                 setTextColor('#000000');
+                setLogoSrc('/projects/logo-color.png'); // Change to your scroll logo
             } else {
                 setColor('transparent');
                 setTextColor('#ffffff');
+                setLogoSrc('/logo.png'); // Change to your default logo
             }
         };
         window.addEventListener('scroll', changeColor);
+
+        // Clean up the event listener
+        return () => {
+            window.removeEventListener('scroll', changeColor);
+        };
     }, []);
 
     return (
@@ -45,7 +53,7 @@ const SiteNavbar = () => {
                     </ul>
 
                     <Link href='/'>
-                        <Image src="/projects/logo-color.png" alt="Metromax Logo" width={140} height={140} />
+                        <Image src={logoSrc} alt="Metromax Logo" width={150} height={150} />
                     </Link>
 
                     <ul style={{ color: `${textColor}` }} className='hidden sm:flex items-center'>
@@ -55,13 +63,11 @@ const SiteNavbar = () => {
                         <li className='p-4'>
                             <Link href='/contact'>Contact Us</Link>
                         </li>
-                        <button style={{ backgroundColor: '#891243' }} className="btn btn-sm text-white border-1 border-black">
+                        <button style={{ backgroundColor: '#8C2E47' }} className="btn btn-sm text-white border-1 border-black">
                             <p className='uppercase'>Brushier</p>
                             <MdDownload />
                         </button>
                     </ul>
-
-
                 </div>
 
                 <div onClick={handleNav} className='block sm:hidden z-10'>
@@ -71,6 +77,7 @@ const SiteNavbar = () => {
                         <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
                     )}
                 </div>
+
                 {/* Mobile Menu */}
                 <div
                     className={

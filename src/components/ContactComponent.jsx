@@ -7,7 +7,7 @@ const ContactComponent = () => {
                 <div className="hero-overlay bg-opacity-50"></div>
                 <div className="hero-content text-neutral-content">
                     <div className="grid md:grid-cols-2 gap-10 justify-center items-center">
-                        <div className="bg-black/40 p-5 rounded-lg">
+                        <div className="bg-black/40 p-5 rounded-lg text-white">
                             <h1 className="text-4xl font-bold">Get in touch</h1>
                             <p className="pt-2 pb-4">We value your thoughts and welcome any questions, feedback, or greetings. Please reach out to us using the provided contact information or our contact form. Our team is ready to assist and looks forward to connecting with you.</p>
                         </div>

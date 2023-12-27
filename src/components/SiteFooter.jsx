@@ -16,12 +16,6 @@ const SiteFooter = () => {
                         <Link href='' className="link link-hover">Contact</Link>
                         <Link href='' className="link link-hover">Gallery</Link>
                     </nav>
-                    {/* <nav>
-                        <header className="footer-title">Legal</header>
-                        <Link className="link link-hover">Terms of use</Link>
-                        <Link className="link link-hover">Privacy policy</Link>
-                        <Link className="link link-hover">Cookie policy</Link>
-                    </nav> */}
                     <form>
                         <header className="footer-title">Newsletter</header>
                         <fieldset className="form-control">
@@ -29,8 +23,8 @@ const SiteFooter = () => {
                                 <span className="label-text text-white">Enter your email address</span>
                             </label>
                             <div className="join">
-                                <input type="text" placeholder="username@site.com" className="input input-bordered join-item " />
-                                <button className="btn btn-accent join-item ">Subscribe</button>
+                                <input type="text" placeholder="username@site.com" className="input input-bordered join-item input-xs md:input-md " />
+                                <button className="btn btn-accent join-item btn-xs md:btn-md">Subscribe</button>
                             </div>
                         </fieldset>
                     </form>

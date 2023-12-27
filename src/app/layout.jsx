@@ -2,7 +2,6 @@ import SiteFooter from '@/components/SiteFooter';
 import SiteNavbar from '@/components/SiteNavbar';
 import { Mulish } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
-
 const ubuntuFont = Mulish({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata = {
@@ -15,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <style>{ubuntuFont.styles}</style>
+        <link rel="icon" href="favicon.png" />
       </head>
       <body className={ubuntuFont.className}>
         <SiteNavbar />
