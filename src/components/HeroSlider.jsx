@@ -7,7 +7,7 @@ const HeroSlider = () => {
 
                 <div id="slide1" className="carousel-item relative w-full">
                     <div className="w-full">
-                        <div className="hero min-h-screen w-full" style={{ backgroundImage: 'url(https://img.freepik.com/premium-photo/business-notion-prosperous-industrial-architecture-as-seen-from-steel-glass-skyscrapers_410516-2790.jpg?size=626&ext=jpg&ga=GA1.1.1389451345.1700558843&semt=sph)' }}>
+                        <div className="hero min-h-screen w-full" style={{ backgroundImage: 'url(https://i.ibb.co/s5cv4j7/Whats-App-Image-2023-12-25-at-16-11-42-9a0d028e.jpg)' }}>
                             <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-left text-neutral-content w-screen">
                                 <div className="max-w-md bg-black/20 p-5 rounded-lg">
@@ -26,7 +26,7 @@ const HeroSlider = () => {
 
                 <div id="slide2" className="carousel-item relative w-full">
                     <div className="w-full">
-                        <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://img.freepik.com/premium-photo/geometric-facades-residential-building_294094-27.jpg?size=626&ext=jpg&ga=GA1.1.1389451345.1700558843&semt=sph)' }}>
+                        <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/ZBCt9tt/Whats-App-Image-2023-12-25-at-16-11-47-6fb152ea.jpg)' }}>
                             <div className="hero-overlay bg-opacity-60"></div>
                             <div className="hero-content text-left text-neutral-content w-screen">
                                 <div className="max-w-md bg-black/20 p-5 rounded-lg">
@@ -42,6 +42,7 @@ const HeroSlider = () => {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
+                
             </div>
         </div>
     )
