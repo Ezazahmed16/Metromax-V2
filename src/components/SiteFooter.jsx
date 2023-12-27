@@ -8,7 +8,7 @@ const SiteFooter = () => {
             <div className="block">
                 <footer style={{ backgroundColor: '#8C2E47' }} className="footer p-10 text-white justify-around items-start">
                     <nav>
-                        <Image src="/logo.png" alt="Metromax Logo" width={180} height={180} />
+                        <Image src="/GIL/logo.png" alt="Metromax Logo" width={180} height={180} />
                     </nav>
                     <nav className="">
                         <header className="footer-title">Company</header>
