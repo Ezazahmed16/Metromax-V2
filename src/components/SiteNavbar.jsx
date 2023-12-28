@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { MdDownload } from "react-icons/md";
@@ -9,7 +10,8 @@ const SiteNavbar = () => {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState('transparent');
     const [textColor, setTextColor] = useState('white');
-    const [logoSrc, setLogoSrc] = useState('/projects/logo-color.png');
+    const [logoSrc, setLogoSrc] = useState('/GIL/logo.png');
+    const router = useRouter();
 
     const handleNav = () => {
         setNav(!nav);
@@ -34,6 +36,12 @@ const SiteNavbar = () => {
             window.removeEventListener('scroll', changeColor);
         };
     }, []);
+
+    // Function to handle the download when "Brushier" button is clicked
+    const handleBrushierDownload = () => {
+        const filePath = '/Brochure-7.pdf';
+        router.push(filePath);
+    };
 
     return (
         <div
@@ -63,10 +71,18 @@ const SiteNavbar = () => {
                         <li className='p-4'>
                             <Link href='/contact'>Contact Us</Link>
                         </li>
-                        <button style={{ backgroundColor: '#8C2E47' }} className="btn btn-sm text-white border-1 border-black">
+
+
+                        <a
+                            style={{ backgroundColor: '#8C2E47' }}
+                            href='/Brochure-7.pdf' 
+                            download='Brochure-7.pdf' 
+                            className='btn btn-sm text-white border-1 border-black'
+                        >
                             <p className='uppercase'>Brushier</p>
                             <MdDownload />
-                        </button>
+                        </a>
+
                     </ul>
                 </div>
 
