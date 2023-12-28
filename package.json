@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@egjs/react-flicking": "^4.11.2",
     "@react-icons/all-files": "^4.1.0",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-videos": "1.4.1",
     "nextjs-toploader": "^1.6.4",
     "react": "^18",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
   },
