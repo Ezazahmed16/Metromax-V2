@@ -85,14 +85,59 @@ const SouthMetromaxComponent = () => {
           <h1 style={{ borderLeft: '4px solid #4E0D38' }} className='text-xl md:text-3xl border-l-8 pl-5 text-justify'>
             AMENITIES</h1>
 
-          <div className="">
+          <div className="grid grid-cols-4 gap-5 justify-between items-center">
+
             <div className="">
-
-              {/* <figure className="flex-all rounded mb-15 m-side-auto">
-                <img alt="" src="https://imtiaz.ae/uploads/facility/3/Fully-Furnished.svg" />
-              </figure> */}
-
+              <div className="items-center p-1 py-5 justify-center mx-auto">
+                <figure className="flex-all rounded mb-15 m-side-auto">
+                  <img alt="" src="https://imtiaz.ae/uploads/facility/3/Fully-Furnished.svg" className='mx-auto border border-1 border-black
+               rounded-full p-1 ' />
+                </figure>
+              </div>
+              <p className="uppercase text-xl text-center mt-2">FURNISHED</p>
             </div>
+
+            <div className="">
+              <div className="items-center p-1 py-5 justify-center mx-auto">
+                <figure className="flex-all rounded mb-15 m-side-auto">
+                  <img alt="" src="https://imtiaz.ae/uploads/facility/9/club-room.svg" className='mx-auto border border-1 border-black
+               rounded-full p-5' />
+                </figure>
+              </div>
+              <p className="uppercase text-xl text-center mt-2">CLUB ROOM</p>
+            </div>
+
+            <div className="">
+              <div className="items-center p-1 py-5 justify-center mx-auto border border-1 border-black
+               rounded-full">
+                <figure className="flex-all mb-15 m-side-auto">
+                  <img alt="" src="https://imtiaz.ae/uploads/facility/10/Gym.svg" className='mx-auto p-5' />
+                </figure>
+              </div>
+              <p className="uppercase text-xl text-center mt-2">FULLY EQUIPPED GYM</p>
+            </div>
+
+            <div className="">
+              <div className="items-center p-1 py-5 justify-center mx-auto">
+                <figure className="flex-all rounded mb-15 m-side-auto">
+                  <img alt="" src="https://imtiaz.ae/uploads/facility/3/Fully-Furnished.svg" className='mx-auto border border-1 border-black
+               rounded-full p-1' />
+                </figure>
+              </div>
+              <p className="uppercase text-xl text-center mt-2">FURNISHED</p>
+            </div>
+
+            <div className="">
+              <div className="items-center p-1 py-5 justify-center mx-auto">
+                <figure className="flex-all rounded mb-15 m-side-auto">
+                  <img alt="" src="https://imtiaz.ae/uploads/facility/3/Fully-Furnished.svg" className='mx-auto border border-1 border-black
+               rounded-full p-1' />
+                </figure>
+              </div>
+              <p className="uppercase text-xl text-center mt-2">FURNISHED</p>
+            </div>
+
+
           </div>
         </div>
 
