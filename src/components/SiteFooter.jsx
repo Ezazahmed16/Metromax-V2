@@ -23,7 +23,7 @@ const SiteFooter = () => {
                                 <span className="label-text text-white">Enter your email address</span>
                             </label>
                             <div className="join">
-                                <input type="text" placeholder="username@site.com" className="input input-bordered join-item input-xs md:input-md " />
+                                <input type="text" placeholder="username@site.com" className="input input-bordered join-item input-xs md:input-md text-black" />
                                 <button className="btn btn-accent join-item btn-xs md:btn-md">Subscribe</button>
                             </div>
                         </fieldset>

@@ -9,10 +9,10 @@ const MessageMDirector = () => {
                     <div className="hero-content grid md:grid-cols-2 grid-cols-1 gap-10">
                         <div className="mx-auto">
                             <Image
-                                src="https://img.freepik.com/premium-photo/ambition-gets-you-far-i-can-testify-that-portrait-confident-mature-businessman-standing-office-with-his-colleagues-background_590464-47752.jpg?size=626&ext=jpg&ga=GA1.1.579468515.1702963902&semt=sph"
+                                src="/assets/arefine1.jpg"
                                 alt="MANAGING DIRECTOR"
                                 width={400}
-                                height={400}
+                                height={200}
                                 className="rounded-xl shadow-2xl"
                             />
                         </div>

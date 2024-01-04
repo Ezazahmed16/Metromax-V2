@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const MessageDirector = () => {
@@ -30,7 +31,9 @@ const MessageDirector = () => {
                             </p>
                         </div>
                         <div className="mx-auto">
-                            <img src="https://img.freepik.com/free-photo/medium-shot-male-flight-attendant-posing_23-2150312701.jpg?size=626&ext=jpg&ga=GA1.2.579468515.1702963902&semt=sph" className="rounded-xl shadow-2xl" alt='MANAGING DIRECTOR'/>
+                            {/* <img src="https://img.freepik.com/free-photo/medium-shot-male-flight-attendant-posing_23-2150312701.jpg?size=626&ext=jpg&ga=GA1.2.579468515.1702963902&semt=sph" className="rounded-xl shadow-2xl" alt='MANAGING DIRECTOR' /> */}
+                            <Image src="/assets/mizanur.JPG" className="rounded-xl shadow-2xl" width={300}
+                                height={100} alt='MANAGING DIRECTOR' />
                         </div>
                     </div>
                 </div>
